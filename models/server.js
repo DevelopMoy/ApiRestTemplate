@@ -18,9 +18,7 @@ class Server {
 
     middlewares(){ // Middlewares globales
         // CORS
-        this.app.use(cors({
-            origin: 'https://pruebaapirests.herokuapp.com/'
-        }));
+        this.app.use(cors());
         // LECTURA Y PARSEO DEL BODY
         this.app.use(express.json());
         // DIRECTORIO ESTATICO
